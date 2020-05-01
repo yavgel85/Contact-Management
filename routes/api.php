@@ -10,4 +10,10 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
     // Users
     Route::apiResource('users', 'UsersApiController');
 
+    // Contact Companies
+    Route::apiResource('contact-companies', 'ContactCompanyApiController');
+
+    // Contact Contacts
+    Route::apiResource('contact-contacts', 'ContactContactsApiController');
+
 });
